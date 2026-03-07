@@ -12,6 +12,10 @@ public class Main {
         PaymentMethod payment2 =
                 new PayPalPayment("customer@email.com");
         checkout.checkout(payment2, 50);
+        System.out.println("--------------");
+        PaymentMethod payment3 =
+                new MobileMoneyPayment("615294858");
+        checkout.checkout(payment3, 90);
 
     }
 }
